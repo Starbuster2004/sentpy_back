@@ -15,7 +15,7 @@ frontend_url = "https://mango-beach-034149000.4.azurestaticapps.net/"
 # CORS 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[frontend_url],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
