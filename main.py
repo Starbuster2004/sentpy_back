@@ -11,8 +11,7 @@ app = FastAPI()
 security = HTTPBasic()
 
 # environment variable
-frontend_url = os.getenv("FRONT_END_URL", "http://localhost:3000")
-
+frontend_url = "https://mango-beach-034149000.4.azurestaticapps.net/"
 # CORS 
 app.add_middleware(
     CORSMiddleware,
