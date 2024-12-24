@@ -11,7 +11,7 @@ app = FastAPI()
 security = HTTPBasic()
 
 # FRONT_END_URL from environment variable
-backend_url = os.getenv("BACKEND_URL", "http://localhost:3000")
+backend_url = os.getenv("FRONT_END_URL", "http://localhost:3000")
 
 # CORS configuration
 app.add_middleware(
